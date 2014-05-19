@@ -21,6 +21,7 @@
 		0BFB30781929B81B00AE7DAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFB305A1929B81B00AE7DAE /* UIKit.framework */; };
 		0BFB30801929B81B00AE7DAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BFB307E1929B81B00AE7DAE /* InfoPlist.strings */; };
 		0BFB30821929B81B00AE7DAE /* _048Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFB30811929B81B00AE7DAE /* _048Tests.m */; };
+		0BFB308D1929B91600AE7DAE /* Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFB308C1929B91600AE7DAE /* Calculate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0BFB307D1929B81B00AE7DAE /* 2048Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2048Tests-Info.plist"; sourceTree = "<group>"; };
 		0BFB307F1929B81B00AE7DAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0BFB30811929B81B00AE7DAE /* _048Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _048Tests.m; sourceTree = "<group>"; };
+		0BFB308B1929B91600AE7DAE /* Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculate.h; sourceTree = "<group>"; };
+		0BFB308C1929B91600AE7DAE /* Calculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				0BFB306C1929B81B00AE7DAE /* ViewController.m */,
 				0BFB306E1929B81B00AE7DAE /* Images.xcassets */,
 				0BFB305D1929B81B00AE7DAE /* Supporting Files */,
+				0BFB308B1929B91600AE7DAE /* Calculate.h */,
+				0BFB308C1929B91600AE7DAE /* Calculate.m */,
 			);
 			path = 2048;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFB308D1929B91600AE7DAE /* Calculate.m in Sources */,
 				0BFB306D1929B81B00AE7DAE /* ViewController.m in Sources */,
 				0BFB30671929B81B00AE7DAE /* AppDelegate.m in Sources */,
 				0BFB30631929B81B00AE7DAE /* main.m in Sources */,
@@ -333,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -365,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

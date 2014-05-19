@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-
+#import "Calculate.h"
 @interface _048Tests : XCTestCase
 
 @end
@@ -26,9 +26,9 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testCalculateInit
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    Calculate *caculate = [Calculate new];
 }
 
 @end

@@ -17,9 +17,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    UISwipeGestureRecognizer *rightSwipeGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipe:)];
+    [rightSwipeGesture setDirection:UISwipeGestureRecognizerDirectionRight];
+    [self.view addGestureRecognizer:rightSwipeGesture];
+    
+    UISwipeGestureRecognizer *leftSwipeGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipe:)];
+    [leftSwipeGesture setDirection:UISwipeGestureRecognizerDirectionLeft];
+    [self.view addGestureRecognizer:leftSwipeGesture];
+    
+    UISwipeGestureRecognizer *downSwipeGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipe:)];
+    [downSwipeGesture setDirection:UISwipeGestureRecognizerDirectionDown];
+    [self.view addGestureRecognizer:downSwipeGesture];
+    
+    UISwipeGestureRecognizer *upSwipeGesture = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipe:)];
+    [upSwipeGesture setDirection:UISwipeGestureRecognizerDirectionUp];
+    [self.view addGestureRecognizer:upSwipeGesture];
 }
 
+- (void)swipe:(UISwipeGestureRecognizer *)gesture
+{
+    NSLog(@"direction : %u",[gesture direction]);
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
