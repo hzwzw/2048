@@ -22,6 +22,7 @@
 		0BFB30801929B81B00AE7DAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BFB307E1929B81B00AE7DAE /* InfoPlist.strings */; };
 		0BFB30821929B81B00AE7DAE /* _048Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFB30811929B81B00AE7DAE /* _048Tests.m */; };
 		0BFB308D1929B91600AE7DAE /* Calculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFB308C1929B91600AE7DAE /* Calculate.m */; };
+		0BFB30901929F2B000AE7DAE /* NumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFB308F1929F2B000AE7DAE /* NumberLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		0BFB30811929B81B00AE7DAE /* _048Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _048Tests.m; sourceTree = "<group>"; };
 		0BFB308B1929B91600AE7DAE /* Calculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculate.h; sourceTree = "<group>"; };
 		0BFB308C1929B91600AE7DAE /* Calculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculate.m; sourceTree = "<group>"; };
+		0BFB308E1929F2B000AE7DAE /* NumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberLabel.h; sourceTree = "<group>"; };
+		0BFB308F1929F2B000AE7DAE /* NumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				0BFB30681929B81B00AE7DAE /* Main.storyboard */,
 				0BFB306B1929B81B00AE7DAE /* ViewController.h */,
 				0BFB306C1929B81B00AE7DAE /* ViewController.m */,
+				0BFB308E1929F2B000AE7DAE /* NumberLabel.h */,
+				0BFB308F1929F2B000AE7DAE /* NumberLabel.m */,
 				0BFB306E1929B81B00AE7DAE /* Images.xcassets */,
 				0BFB305D1929B81B00AE7DAE /* Supporting Files */,
 				0BFB308B1929B91600AE7DAE /* Calculate.h */,
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFB308D1929B91600AE7DAE /* Calculate.m in Sources */,
+				0BFB30901929F2B000AE7DAE /* NumberLabel.m in Sources */,
 				0BFB306D1929B81B00AE7DAE /* ViewController.m in Sources */,
 				0BFB30671929B81B00AE7DAE /* AppDelegate.m in Sources */,
 				0BFB30631929B81B00AE7DAE /* main.m in Sources */,

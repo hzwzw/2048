@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NumberLabel.h"
 typedef NS_OPTIONS(NSUInteger, Dirction) {
     Right = 1 << 0,
     Left  = 1 << 1,
@@ -14,7 +15,15 @@ typedef NS_OPTIONS(NSUInteger, Dirction) {
     Down  = 1 << 3
 };
 
+@interface Locus : NSObject
+@property(nonatomic,assign)CGPoint nowIndex;
+@property(nonatomic,assign)CGPoint arriveIndex;
+@property(nonatomic,strong)NSNumber *number;
+@property(nonatomic,assign)BOOL dismiss;
+@end
+
 @interface Calculate : NSObject
 
--(void)swipDirction:(Dirction)dirction;
++(NSMutableArray *)swipDirction:(UISwipeGestureRecognizerDirection)dirction;
++(NumberLabel *)addNew;
 @end
