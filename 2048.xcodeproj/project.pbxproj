@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B29AE5A192B063B00FCF60E /* historyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29AE59192B063B00FCF60E /* historyViewController.m */; };
+		0B29AE60192B0F2600FCF60E /* NSDictionary+dictionaryWithObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29AE5D192B0F2600FCF60E /* NSDictionary+dictionaryWithObject.m */; };
+		0B29AE61192B0F2600FCF60E /* NSObject+objectWithDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29AE5F192B0F2600FCF60E /* NSObject+objectWithDictionary.m */; };
+		0B29AE64192B0F5400FCF60E /* historyRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B29AE63192B0F5400FCF60E /* historyRecord.m */; };
 		0BFB30571929B81B00AE7DAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFB30561929B81B00AE7DAE /* Foundation.framework */; };
 		0BFB30591929B81B00AE7DAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFB30581929B81B00AE7DAE /* CoreGraphics.framework */; };
 		0BFB305B1929B81B00AE7DAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFB305A1929B81B00AE7DAE /* UIKit.framework */; };
@@ -36,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B29AE58192B063B00FCF60E /* historyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = historyViewController.h; sourceTree = "<group>"; };
+		0B29AE59192B063B00FCF60E /* historyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = historyViewController.m; sourceTree = "<group>"; };
+		0B29AE5C192B0F2600FCF60E /* NSDictionary+dictionaryWithObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+dictionaryWithObject.h"; sourceTree = "<group>"; };
+		0B29AE5D192B0F2600FCF60E /* NSDictionary+dictionaryWithObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+dictionaryWithObject.m"; sourceTree = "<group>"; };
+		0B29AE5E192B0F2600FCF60E /* NSObject+objectWithDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+objectWithDictionary.h"; sourceTree = "<group>"; };
+		0B29AE5F192B0F2600FCF60E /* NSObject+objectWithDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+objectWithDictionary.m"; sourceTree = "<group>"; };
+		0B29AE62192B0F5400FCF60E /* historyRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = historyRecord.h; sourceTree = "<group>"; };
+		0B29AE63192B0F5400FCF60E /* historyRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = historyRecord.m; sourceTree = "<group>"; };
 		0BFB30531929B81B00AE7DAE /* 2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFB30561929B81B00AE7DAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BFB30581929B81B00AE7DAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,6 +97,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B29AE5B192B0F1400FCF60E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0B29AE5C192B0F2600FCF60E /* NSDictionary+dictionaryWithObject.h */,
+				0B29AE5D192B0F2600FCF60E /* NSDictionary+dictionaryWithObject.m */,
+				0B29AE5E192B0F2600FCF60E /* NSObject+objectWithDictionary.h */,
+				0B29AE5F192B0F2600FCF60E /* NSObject+objectWithDictionary.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		0BFB304A1929B81B00AE7DAE = {
 			isa = PBXGroup;
 			children = (
@@ -118,13 +141,18 @@
 		0BFB305C1929B81B00AE7DAE /* 2048 */ = {
 			isa = PBXGroup;
 			children = (
+				0B29AE5B192B0F1400FCF60E /* Utility */,
 				0BFB30651929B81B00AE7DAE /* AppDelegate.h */,
 				0BFB30661929B81B00AE7DAE /* AppDelegate.m */,
 				0BFB30681929B81B00AE7DAE /* Main.storyboard */,
 				0BFB306B1929B81B00AE7DAE /* ViewController.h */,
 				0BFB306C1929B81B00AE7DAE /* ViewController.m */,
+				0B29AE58192B063B00FCF60E /* historyViewController.h */,
+				0B29AE59192B063B00FCF60E /* historyViewController.m */,
 				0BFB308E1929F2B000AE7DAE /* NumberLabel.h */,
 				0BFB308F1929F2B000AE7DAE /* NumberLabel.m */,
+				0B29AE62192B0F5400FCF60E /* historyRecord.h */,
+				0B29AE63192B0F5400FCF60E /* historyRecord.m */,
 				0BFB306E1929B81B00AE7DAE /* Images.xcassets */,
 				0BFB305D1929B81B00AE7DAE /* Supporting Files */,
 				0BFB308B1929B91600AE7DAE /* Calculate.h */,
@@ -260,9 +288,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFB308D1929B91600AE7DAE /* Calculate.m in Sources */,
+				0B29AE64192B0F5400FCF60E /* historyRecord.m in Sources */,
+				0B29AE5A192B063B00FCF60E /* historyViewController.m in Sources */,
 				0BFB30901929F2B000AE7DAE /* NumberLabel.m in Sources */,
 				0BFB306D1929B81B00AE7DAE /* ViewController.m in Sources */,
+				0B29AE60192B0F2600FCF60E /* NSDictionary+dictionaryWithObject.m in Sources */,
 				0BFB30671929B81B00AE7DAE /* AppDelegate.m in Sources */,
+				0B29AE61192B0F2600FCF60E /* NSObject+objectWithDictionary.m in Sources */,
 				0BFB30631929B81B00AE7DAE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +500,7 @@
 				0BFB30871929B81B00AE7DAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BFB30881929B81B00AE7DAE /* Build configuration list for PBXNativeTarget "2048Tests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +509,7 @@
 				0BFB308A1929B81B00AE7DAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

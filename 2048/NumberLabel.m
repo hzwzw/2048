@@ -14,6 +14,8 @@
 {
     self = [super init];
     if (self) {
+        self.layer.borderWidth = 5.0;
+        self.layer.borderColor =[UIColor grayColor].CGColor;
         self.text = [NSString stringWithFormat:@"%d",value];
         self.frame =CGRectMake(horizontalIndex*singleWight, verticalIndex*singleWight, singleWight, singleWight);
         self.textAlignment = NSTextAlignmentCenter;
@@ -35,7 +37,10 @@
     }else if([text isEqualToString:@"4"])
     {
         self.backgroundColor = [UIColor colorWithRed:237.0/255.0 green:215.0/255.0 blue:235.0/255.0 alpha:1.0];
-    }
+    }else if([text isEqualToString:@"8"]){
+        self.backgroundColor = [UIColor colorWithRed:37.0/255.0 green:215.0/255.0 blue:235.0/255.0 alpha:1.0];
+    }else
+        self.backgroundColor = [UIColor colorWithRed:34.0/255.0 green:172.0/255.0 blue:56.0/255.0 alpha:1.0];
     
 }
 @end

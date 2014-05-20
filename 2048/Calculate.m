@@ -11,11 +11,23 @@
 @implementation Calculate
 
 static int num[4][4] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-+ (void)initialize
-{
-    
-}
 
++(NSArray *)save
+{
+    NSMutableArray *array = [NSMutableArray new];
+    for (int i = 0; i<4; i++) {
+        for (int j=0; j<4; j++) {
+            [array addObject:[NSNumber numberWithInt:num[i][j]]];
+        }
+    }
+    return [NSArray arrayWithArray:array];
+}
++(void)reset:(NSArray *)array
+{
+    for (int i = 0; i<[array count]; i++) {
+        num[i/4][i%4] = [[array objectAtIndex:i] intValue];
+    }
+}
 +(NSMutableArray *)swipDirction:(UISwipeGestureRecognizerDirection)dirction
 {
     NSMutableArray* locusArray = [NSMutableArray new];
